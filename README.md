@@ -27,3 +27,7 @@ docker-compose run --rm app python manage.py migrate
 docker-compose run app python manage.py loaddata data_dump.json
 ```
 
+4. For receive the email to an specific address
+```
+Modify the env EMAIL_RECEIVERS in app/settings/base.py and re run the containers.
+```
